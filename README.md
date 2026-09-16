@@ -4,29 +4,10 @@
 **buhito** is a Python library for enumerating graphlets and analyzing graphlet-based features from graphs. 
 
 ## Installation
-
-### With pip
 ```bash
 git clone https://github.com/lanl/buhito.git
 cd buhito
-pip install -e .
-```
-
-### With conda
-```bash
-git clone https://github.com/lanl/buhito.git
-cd buhito
-```
-if creating a new conda environment:
-```bash
-conda env create -n buhito --file env.yml
-```
-if installing into an existing conda environment:
-```bash
-conda env update -n <ENV_NAME> -f env.yml
-```
-```bash
-pip install -e .
+uv sync
 ```
 
 ## Quick Start
