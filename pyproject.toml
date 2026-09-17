@@ -1,11 +1,13 @@
 [build-system]
-requires = ["setuptools>=64"]
+requires = [
+    "setuptools>=80",
+    "setuptools-scm[simple]>=9.2",
+]
 build-backend = "setuptools.build_meta"
-
 
 [project]
 name = "buhito"
-version = "0.0.0"
+dynamic = ["version"]
 description = "buhito is a Python library for graph analysis and machine learning"
 readme = "README.rst"
 requires-python = ">=3.10,<3.12"
@@ -42,12 +44,10 @@ dependencies = [
     "pydot>=4.0.1,<5.0",
 ]
 
-
 [project.urls]
 Homepage = "https://github.com/lanl/buhito"
 "Bug Tracker" = "https://github.com/lanl/buhito/issues"
 "Source Code" = "https://github.com/lanl/buhito"
-
 
 [project.optional-dependencies]
 docs = [
@@ -65,11 +65,9 @@ full = [
     "triton",
 ]
 
-
 [tool.pytest.ini_options]
 addopts = "-v"
 testpaths = ["tests"]
-
 
 [tool.setuptools.packages.find]
 where = ["src"]
