@@ -7,7 +7,7 @@
 ```bash
 git clone https://github.com/lanl/buhito.git
 cd buhito
-uv sync
+uv sync --all-extras
 ```
 
 ## Quick Start
@@ -50,7 +50,17 @@ Available example scripts:
 
 - `examples/plotting_example.py` — visualize graphlets from the Petersen graph
 - `examples/qm9/benchmark_graphlet_featurizers_train_test.py` — benchmark featurizers on QM9 chemical properties data
-- `examples/reddit_example/reddit_graphlets_example.py` — network graphlet analysis for REDDIT-5K graphs
+
+## Run Examples
+### QM9
+```sh
+python examples/qm9/benchmark_graphlet_featurizers_train_test.py \
+  --data examples/qm9/qm9data/qm9_processed.csv \
+  --max-len 2 3 4 5 6 \
+  --repeats 3 \
+  --n-jobs -1 \
+  --outdir bench_qm9
+```
 
 ## Testing
 
