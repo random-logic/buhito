@@ -1,5 +1,5 @@
 # buhito
-<img src="assets/buhito_icon.svg" alt="Logo" width="500">
+<img src="https://raw.githubusercontent.com/lanl/buhito/main/assets/buhito_icon.svg" alt="Logo" width="500">
 
 **buhito** is a Python library for enumerating graphlets and analyzing graphlet-based features from graphs. 
 
