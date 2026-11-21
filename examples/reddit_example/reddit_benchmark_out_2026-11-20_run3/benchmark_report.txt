@@ -1,0 +1,33 @@
+Graphlet Enumeration Benchmark Report
+========================================
+
+Graphs: 2
+Max sizes: [3, 4]
+Repeats: 3, Warmup: 1
+
+Graph: reddit_graph_0
+  nodes=1593, edges=1888, unique_node_label=25
+  Results (time_mean_s):
+algorithm                bfs         dfs
+max_graphlet_size                       
+3                   1.876560   20.260929
+4                 632.795252 5979.376497
+  Total graphlets:
+algorithm               bfs       dfs
+max_graphlet_size                    
+3                    196985    196985
+4                  38234347  38234347
+
+Graph: reddit_graph_1
+  nodes=425, edges=494, unique_node_label=16
+  Results (time_mean_s):
+algorithm              bfs       dfs
+max_graphlet_size                   
+3                 0.069949  0.349875
+4                 6.335577 25.792696
+  Total graphlets:
+algorithm             bfs     dfs
+max_graphlet_size                
+3                   11739   11739
+4                  459354  459354
+
